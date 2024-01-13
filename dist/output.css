@@ -559,6 +559,14 @@ video {
   position: relative;
 }
 
+.col-span-1{
+  grid-column: span 1 / span 1;
+}
+
+.row-span-1{
+  grid-row: span 1 / span 1;
+}
+
 .m-0{
   margin: 0px;
 }
@@ -601,8 +609,24 @@ video {
   height: 100%;
 }
 
+.h-60{
+  height: 15rem;
+}
+
+.h-40{
+  height: 10rem;
+}
+
 .w-full{
   width: 100%;
+}
+
+.w-60{
+  width: 15rem;
+}
+
+.w-40{
+  width: 10rem;
 }
 
 .cursor-pointer{
@@ -713,6 +737,10 @@ video {
   padding-top: 0.5rem;
 }
 
+.pt-4{
+  padding-top: 1rem;
+}
+
 .text-center{
   text-align: center;
 }
@@ -727,6 +755,10 @@ video {
 
 .font-Delius{
   font-family: Delius Swash Caps, cursive;
+}
+
+.font-Mukta{
+  font-family: Mukta Vaani, sans-serif;
 }
 
 .text-2xl{
@@ -752,6 +784,16 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.text-3xl{
+  font-size: 1.875rem;
+  line-height: 2.25rem;
 }
 
 .font-bold{
@@ -788,6 +830,10 @@ video {
 
 .opacity-70{
   opacity: 0.7;
+}
+
+.opacity-60{
+  opacity: 0.6;
 }
 
 /* scrolbar  */
@@ -927,6 +973,10 @@ ion-icon {
 }
 
 @media (min-width: 768px){
+  .md\:grid{
+    display: grid;
+  }
+
   .md\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -956,6 +1006,10 @@ ion-icon {
 }
 
 @media (min-width: 976px){
+  .lg\:grid{
+    display: grid;
+  }
+
   .lg\:grid-cols-2{
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }

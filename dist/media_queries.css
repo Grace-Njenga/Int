@@ -21,4 +21,7 @@
         grid-template-rows: 80% 10%;
         font-size: small;
     }
+    .image{
+        order: -1;
+    }
 }    
