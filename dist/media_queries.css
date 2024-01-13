@@ -9,4 +9,16 @@
     .sides{
         display: none;
     }
+
+    .product{
+        width: 85%;
+        gap: 10px ;
+        height: auto;
+        padding-bottom: 1rem;
+    }
+    .card{
+        display: grid;
+        grid-template-rows: 80% 10%;
+        font-size: small;
+    }
 }    
