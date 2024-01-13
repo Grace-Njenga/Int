@@ -1,8 +1,38 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./dist/*.{html,js}"],
   theme: {
-    extend: {},
+    screens: {
+      sm: '480px',
+      md: '768px',
+      lg: '976px',
+      xl: '1440px',
+    },
+    colors: {
+      // Primary color 
+      cacao: "#4F483F",
+      // Secondary color 
+      beige: "#E2D3C4",
+      // ACCENT COLOR 
+      burnt: "#B5977F",
+      // white 
+      white: "#FFF7EA",
+      // black 
+      noir: "#504538",
+      //orange
+      orangey: "#C98100",
+    },
+    extend: {
+      fontFamily: {
+        // titles 
+        'Copse': ['Copse', 'serif'],
+        // sub titles 
+        // italic
+        'Delius': ['Delius Swash Caps', 'cursive'],
+        // paragraph
+        'Mukta': ['Mukta Vaani', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 };

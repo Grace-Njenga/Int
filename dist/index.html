@@ -1,24 +1,222 @@
 <!DOCTYPE html>
 <html lang="en-uk">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- CSS styles sheet -->
-    <link href="/output.css" rel="stylesheet" />
+      <!-- CSS styles sheet -->
+      <link href="output.css" rel="stylesheet" />
 
-    <title>Table Interior Design</title>
-  </head>
-  <body>
-    <!-- header section  -->
-    <section class="header">
-      <header class="">
-        <div class="">
-            <h1>SMUG <span>.</span></h1>
-        </div>
-      </header>
-    </section>
+      <!-- media queries css  -->
+      <link rel="stylesheet" href="media_queries.css" />
 
+      <!-- swiper js -->
+      <link
+         rel="stylesheet"
+         href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
 
-  </body>
+      <!-- animate on scroll  -->
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+      <!-- fav icon  -->
+      <!-- <link rel="icon" href="./fav-icon.svg" type="image/svg"> -->
+
+      <title>Sugar Room</title>
+   </head>
+   <body>
+      <!-- header section  -->
+      <section class="header">
+         <!-- header -->
+         <header class="flex justify-between flex-end">
+            <div class="flex flex-col flex-end">
+               <ion-icon
+                  name="home-outline"
+                  class="text-burnt mr-2 font-bold"
+               ></ion-icon>
+               <h1 class="p-0 m-0">Sugar Room</h1>
+            </div>
+
+            <nav class="nav flex">
+               <ul class="flex">
+                  <li class="mr-4 ml-4"><a href="#">About Us</a></li>
+                  <li class="mr-4"><a href="#">Desserts</a></li>
+                  <li class="mr-4"><a href="#">Reviews</a></li>
+                  <li class="mr-4"><a href="#">Contacts</a></li>
+               </ul>
+            </nav>
+
+            <ion-icon name="cart-outline" class="text-lg"></ion-icon>
+         </header>
+      </section>
+
+      <!-- section hero  -->
+      <section class="hero relative">
+         <!-- hero content  -->
+
+         <div class="content absolute">
+            <!-- center the shit  -->
+            <!-- data-aos="fade-down-right" -->
+            <div class="pb-8">
+               <p class="font-copse text-orangey font-bold lg:text-3xl md:text-3xl text-balance text-right">
+                  Special cakes for special ocassions!
+               </p>
+
+               <!-- italics -->
+               <p class="font-Delius italic py-4 font-semibold">
+                  Every person os unique , why shouldn't their cake be?
+               </p>
+
+               <!-- button  -->
+               <div class="pt-2">
+                  <a
+                     href="#"
+                     class="font-bold cursor-pointer text-primary px-3 py-3 border-cacao border-solid bg-burnt hover:bg-noir hover:text-white"
+                     >CHOOSE A CAKE</a
+                  >
+               </div>
+            </div>
+
+            <div class="sides w-full h-full">
+               <img
+                  src="./img/side_1.jpg"
+                  alt=""
+                  class="w-full h-full object-cover object-center"
+               />
+               <img
+                  src="./img/side_2.jpg"
+                  alt=""
+                  class="w-full h-full object-cover object-center"
+               />
+               <img
+                  src="./img/side_3.jpg"
+                  alt=""
+                  class="w-full h-full object-cover object-center"
+               />
+            </div>
+         </div>
+
+         <div class="w-full h-full">
+            <img
+               src="./img/wedding_cake.jpg"
+               alt=""
+               class="w-full h-full object-contain object-center"
+            />
+         </div>
+      </section>
+
+      <!-- Cakes product range  -->
+      <section class="range">
+         <div class="flex justify-between my-8">
+            <h2 class="font-bold text-2xl py-4 font-copse">
+               Our Product Range
+            </h2>
+
+            <!-- button  -->
+            <div class="pt-2">
+               <a
+                  href="#"
+                  class="font-bold cursor-pointer text-primary px-3 py-3 border-cacao border-solid bg-burnt hover:bg-noir hover:text-white rounded-lg"
+                  >View More <ion-icon name="arrow-forward-outline" class="text-white"></ion-icon
+               ></a>
+            </div>
+         </div>
+
+         <!-- cards products  -->
+         <div class="product">
+            <div class="card">
+               <div class="bg-burnt rounded-lg">
+                  <img src="./img/Caramel_cake.png" alt="" />
+               </div>
+               <div class="mt-2">
+                  <p class="font-copse font-bold font-cacao text-center">Caramel Cake</p>
+               </div>
+            </div>
+            
+            <div class="card">
+               <div class="bg-burnt rounded-lg">
+                  <img src="./img/bread.png" alt="" />
+               </div>
+               <div class="mt-2">
+                  <p class="font-copse font-bold font-cacao text-center">Bread</p>
+               </div>
+            </div>
+
+            <div class="card">
+               <div class="bg-burnt rounded-lg">
+                  <img src="./img/doughnut.png" alt="" />
+               </div>
+               <div class="mt-2">
+                  <p class="font-copse font-bold font-cacao text-center">Doughnuts</p>
+               </div>
+            </div>
+         </div>
+
+         <!-- opening hours and what not  -->
+         <div class="hours grid lg:grid-cols-2 md:grid-cols-2 grid-cols-1 gap-8">
+            <div class="">
+               <img src="./img/gallery (1).jpg" alt="">
+            </div>
+
+            <div class="hours_content grid place-content-center lg:p-4 md:p-4 p-0">
+               <h2 class="font-bold text-4xl text-cacao my-4">
+                  Sugar Room Bakery
+               </h2>
+
+               <p class="my-4 opacity-70">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos aliquid deleniti eum similique velit maxime inventore debitis voluptas fugit hic! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, reprehenderit.
+               </p>
+
+               <h2 class="font-bold text-cacao my-4">Opening Hours:</h2>
+               <div class="grid grid-cols-2 grid-rows-2 my-4">
+                  <p class="font-Copse">
+                     Monday - Friday
+                  </p>
+                  <p class="text-orangey font-Delius">
+                     09:00 - 16:00
+                  </p>
+
+                  <p class="font-Copse">
+                     Saturday - Sunday
+                  </p>
+                  <p class="text-orangey font-Delius">
+                     10:00 - 19:00
+                  </p>
+               </div>
+
+               <div class="icons flex gap-4">
+                  <ion-icon name="logo-facebook" class="bg-cacao hover:bg-orangey cursor-pointer text-white rounded-xl p-3"></ion-icon>
+                  <ion-icon name="logo-twitter" class="bg-cacao hover:bg-orangey cursor-pointer text-white rounded-xl p-3"></ion-icon>
+                  <ion-icon name="logo-youtube" class="bg-cacao hover:bg-orangey cursor-pointer text-white rounded-xl p-3"></ion-icon>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!-- about us section  -->
+      <section class="about">
+         <div class="">
+            <h2 class="font-bold text-2xl my-4 font-copse">About Us</h2>
+         </div>
+      </section>
+
+      <!-- ionic icons -->
+      <script
+         type="module"
+         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <script
+         nomodule
+         src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+      ></script>
+
+      <!-- swiper  -->
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <!-- animate on scroll  -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+      <!-- javascript  -->
+      <script src="script.js"></script>
+   </body>
 </html>
