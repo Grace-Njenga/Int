@@ -108,7 +108,8 @@ ion-icon {
 }
 
 
-.about{
+.about,
+.popular{
    width: 90%;
    margin: 0 auto;
 }
