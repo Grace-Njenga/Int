@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Copse&family=Delius+Swash+Caps&family=Mukta+Vaani:wght@300&display=swap");
 
 p,
-a{
-   font-family: 'Mukta Vaani', sans-serif;
+a {
+   font-family: "Mukta Vaani", sans-serif;
 }
 
 @tailwind base;
@@ -82,7 +82,7 @@ ion-icon {
 }
 
 .range,
-.hours_content{
+.hours_content {
    width: 90%;
    margin: 0 auto;
 }
@@ -107,9 +107,30 @@ ion-icon {
    object-fit: cover;
 }
 
-
 .about,
-.popular{
+.popular,
+.what {
    width: 90%;
    margin: 0 auto;
+}
+
+.special {
+   display: grid;
+   grid-template-rows: 70% 30%;
+   padding-bottom: 1rem;
+}
+
+/* video container  */
+.video-container {
+   position: relative;
+   overflow: hidden;
+   padding-bottom: 56.25%; /* Aspect ratio: 16:9 (adjust as needed) */
+}
+
+.video-container video {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
 }
