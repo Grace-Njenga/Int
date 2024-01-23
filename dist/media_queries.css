@@ -29,7 +29,8 @@
         /* background-color: #402E32; */
         border-radius: 9px;
         padding: 5px;
-        right: 4rem;
+        right: 2rem;
+        top: -0rem;
         z-index: 9999;
     }
     .sides{
