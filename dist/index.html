@@ -29,24 +29,23 @@
       <section class="header">
          <!-- header -->
          <header class="flex justify-between flex-end">
-            <div class="flex flex-col flex-end">
-               <ion-icon
-                  name="home-outline"
-                  class="text-burnt mr-2 font-bold"
-               ></ion-icon>
-               <h1 class="p-0 m-0">Sugar Room</h1>
+            <div class="flex">
+               <h1 class="p-0 m-0 text-sm font-Delius">Sugar Room</h1>
             </div>
 
-            <nav class="nav flex">
-               <ul class="flex">
-                  <li class="mr-4 ml-4"><a href="#">About Us</a></li>
-                  <li class="mr-4"><a href="#">Desserts</a></li>
-                  <li class="mr-4"><a href="#">Reviews</a></li>
-                  <li class="mr-4"><a href="#">Contacts</a></li>
+            <!-- menu icon  -->
+            <ion-icon name="menu-sharp" class="menu text-3xl text-accent" aria-controls="icon-menu" aria-expanded="false"></ion-icon>
+
+            <nav class="flex">
+               <ul id="icon-menu" data-visible="false" class="nav flex py-2 gap-6">
+                  <li class="mr-4 hover:text-orangey lg:ml-4 md:ml-4 ml-0"><a href="#">About Us</a></li>
+                  <li class="mr-4 hover:text-orangey"><a href="#">Desserts</a></li>
+                  <li class="mr-4 hover:text-orangey"><a href="#">Reviews</a></li>
+                  <li class="mr-4 hover:text-orangey"><a href="#">Contacts</a></li>
                </ul>
             </nav>
 
-            <ion-icon name="cart-outline" class="text-lg"></ion-icon>
+            <ion-icon name="cart-outline" class="text-lg font-bold"></ion-icon>
          </header>
       </section>
 
@@ -738,13 +737,13 @@
       <!-- footer section  -->
       <footer class="bg-burnt mt-2">
          <section
-            class="foot grid lg:grid-cols-4 md:grid-cols-4 grid-cols-2 text-center lg:gap-4 md:gap-4 gap-2 text-white font-semibold lg:p-4 md:p-4 p-2"
+            class="foot grid lg:grid-cols-4 md:grid-cols-4 grid-cols-1 text-center lg:gap-4 md:gap-4 gap-2 text-white font-semibold lg:p-4 md:p-4 p-2"
          >
-            <div class="lg:col-span-1 md:col-span-1 col-span-2 flex justify-center items-center flex-col">
-               <div class="grid place-content-center p-2">
+            <div class="lg:col-span-1 md:col-span-1 col-span-1 flex justify-center items-center flex-col">
+               <div class="flex justify-center items-center p-2">
                   <ion-icon
                      name="home-sharp"
-                     class="text-beige text-lg mr-2 font-bold text-center"
+                     class="flex justify-center items-center text-beige text-lg mr-2 font-bold text-center"
                   ></ion-icon>
                   <h1 class="p-0 m-0 font-Delius text-center text-sm text-cacao font-bold">
                      Sugar Room
@@ -762,10 +761,10 @@
             <div class="col-span-1 grid place-content-center">
                <h2 class="my-3 text-lg text-cacao font-bold">Our Store</h2>
                <div class="flex flex-col">
-                  <a href="#">Home</a>
-                  <a href="#">About</a>
-                  <a href="#">Services</a>
-                  <a href="#">Contact</a>
+                  <a href="#" class="hover:text-noir">Home</a>
+                  <a href="#" class="hover:text-noir">About</a>
+                  <a href="#" class="hover:text-noir">Services</a>
+                  <a href="#" class="hover:text-noir">Contact</a>
                </div>
             </div>
 
@@ -773,30 +772,30 @@
             <div class="col-span-1 grid place-content-center">
                <h2 class="my-3 text-lg text-cacao font-bold">Further Lins</h2>
                <div class="flex flex-col">
-                  <a href="#">Terms & Conditions</a>
-                  <a href="#">News</a>
-                  <a href="#">Learning</a>
-                  <a href="#">Exit</a>
+                  <a href="#" class="hover:text-noir">Terms & Conditions</a>
+                  <a href="#" class="hover:text-noir">News</a>
+                  <a href="#" class="hover:text-noir">Learning</a>
+                  <a href="#" class="hover:text-noir">Exit</a>
                </div>
             </div>
 
             <!-- Get in touch  -->
-            <div class="lg:col-span-1 md:col-span-1 col-span-2 grid place-content-center">
+            <div class="lg:col-span-1 md:col-span-1 col-span-1 grid place-content-center">
                <h2 class="my-3 text-lg text-cacao font-bold">Get in Touch</h2>
                <div class="flex flex-col gap-2">
-                  <span class="flex gap-2">
+                  <span class="flex gap-2 hover:text-noir cursor-pointer">
                      <ion-icon name="location-sharp"></ion-icon>
                      <p>2443 Oak Ridge Omaha, QA 45065</p>
                   </span>
 
                   <!-- number  -->
-                  <span class="flex gap-2">
+                  <span class="flex gap-2 hover:text-noir cursor-pointer">
                      <ion-icon name="call-sharp"></ion-icon>
                      <p>207-8767-454</p>
                   </span>
 
                   <!-- mail  -->
-                  <span class="flex gap-2">
+                  <span class="flex gap-2 hover:text-noir cursor-pointer">
                      <ion-icon name="mail-unread-sharp"></ion-icon>
                      <p>support@yoursite.com</p>
                   </span>

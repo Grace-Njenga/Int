@@ -40,10 +40,10 @@ ion-icon {
    padding: 0;
 }
 
-.nav {
+nav {
    position: relative;
 }
-.nav::after {
+nav::after {
    position: absolute;
    content: "";
    height: 1px;
@@ -52,7 +52,7 @@ ion-icon {
    top: 9px;
    left: 100%;
 }
-.nav::before {
+nav::before {
    position: absolute;
    content: "";
    height: 1px;
@@ -60,6 +60,9 @@ ion-icon {
    background-color: #4f483f;
    top: 9px;
    right: 100%;
+}
+.menu{
+   display: none;
 }
 
 .hero {
@@ -70,7 +73,7 @@ ion-icon {
 }
 .content {
    height: 100%;
-   
+
    background: rgba(255, 255, 255, 0.26);
    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
    backdrop-filter: blur(2.6px);
