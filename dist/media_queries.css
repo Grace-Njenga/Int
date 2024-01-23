@@ -7,9 +7,9 @@
     .nav::after{
         display: none;
     }
-    .content{
-        width: 55%;
-    }
+    /* .content{
+        /* width: 55%; 
+    } */
     .sides{
         display: none;
     }

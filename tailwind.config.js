@@ -21,6 +21,8 @@ module.exports = {
       noir: "#504538",
       //orange
       orangey: "#C98100",
+      //black
+      noir: "#1f1f1f"
     },
     extend: {
       fontFamily: {

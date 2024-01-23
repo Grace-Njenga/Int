@@ -587,6 +587,14 @@ video {
   position: relative;
 }
 
+.left-0{
+  left: 0px;
+}
+
+.top-1\/2{
+  top: 50%;
+}
+
 .col-span-1{
   grid-column: span 1 / span 1;
 }
@@ -601,6 +609,10 @@ video {
 
 .row-span-1{
   grid-row: span 1 / span 1;
+}
+
+.float-right{
+  float: right;
 }
 
 .m-0{
@@ -667,8 +679,25 @@ video {
   height: 100%;
 }
 
+.h-screen{
+  height: 100vh;
+}
+
+.w-auto{
+  width: auto;
+}
+
 .w-full{
   width: 100%;
+}
+
+.-translate-y-1\/2{
+  --tw-translate-y: -50%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.transform{
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .cursor-pointer{
@@ -761,6 +790,11 @@ video {
 
 .border-solid{
   border-style: solid;
+}
+
+.border-burnt{
+  --tw-border-opacity: 1;
+  border-color: rgb(181 151 127 / var(--tw-border-opacity));
 }
 
 .border-cacao{
@@ -914,6 +948,10 @@ video {
   font-weight: 700;
 }
 
+.font-extrabold{
+  font-weight: 800;
+}
+
 .font-medium{
   font-weight: 500;
 }
@@ -924,6 +962,14 @@ video {
 
 .italic{
   font-style: italic;
+}
+
+.tracking-widest{
+  letter-spacing: 0.1em;
+}
+
+.tracking-wide{
+  letter-spacing: 0.025em;
 }
 
 .text-beige{
@@ -949,6 +995,11 @@ video {
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 247 234 / var(--tw-text-opacity));
+}
+
+.text-noir{
+  --tw-text-opacity: 1;
+  color: rgb(31 31 31 / var(--tw-text-opacity));
 }
 
 .underline{
@@ -1027,15 +1078,19 @@ ion-icon {
 }
 
 .hero {
-  width: 90%;
-  margin: 0 auto;
+  background: url("../dist/img/back.jpg");
+  width: 100%;
+  background-position: center;
+  background-size: cover;
 }
 
 .content {
   height: 100%;
-  width: 40%;
-  background-color: #fff7ea;
-  opacity: 0.8;
+  background: rgba(255, 255, 255, 0.26);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.6px);
+  -webkit-backdrop-filter: blur(2.6px);
+  /* border: 1px solid rgba(201, 129, 0, 0.3); */
   display: grid;
   place-content: center;
   padding-inline: 2rem;
@@ -1084,7 +1139,7 @@ ion-icon {
 .what,
 .reviews,
 .contact,
-.foot{
+.foot {
   width: 90%;
   margin: 0 auto;
 }
@@ -1112,7 +1167,7 @@ ion-icon {
   left: 0;
 }
 
-.avatar{
+.avatar {
   width: 70px;
   height: 70px;
   overflow: hidden;
@@ -1120,7 +1175,7 @@ ion-icon {
   border: 2px solid #f4c377;
 }
 
-.avatar img{
+.avatar img {
   max-width: 100%;
   width: 100%;
   height: 100%;
@@ -1128,14 +1183,19 @@ ion-icon {
      object-fit: cover;
 }
 
-ion-icon{
+ion-icon {
   font-size: 20px !important;
-  color: #E2D3C4;
+  color: #e2d3c4;
 }
 
 .hover\:border-orangey:hover{
   --tw-border-opacity: 1;
   border-color: rgb(201 129 0 / var(--tw-border-opacity));
+}
+
+.hover\:border-white:hover{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 247 234 / var(--tw-border-opacity));
 }
 
 .hover\:bg-orangey:hover{
@@ -1158,6 +1218,11 @@ ion-icon{
   color: rgb(255 247 234 / var(--tw-text-opacity));
 }
 
+.hover\:text-noir:hover{
+  --tw-text-opacity: 1;
+  color: rgb(31 31 31 / var(--tw-text-opacity));
+}
+
 .focus\:outline-none:focus{
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -1170,6 +1235,10 @@ ion-icon{
 }
 
 @media (min-width: 768px){
+  .md\:left-1\/2{
+    left: 50%;
+  }
+
   .md\:col-span-1{
     grid-column: span 1 / span 1;
   }
@@ -1180,6 +1249,11 @@ ion-icon{
 
   .md\:mb-0{
     margin-bottom: 0px;
+  }
+
+  .md\:-translate-x-1\/2{
+    --tw-translate-x: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .md\:grid-cols-2{
@@ -1231,6 +1305,10 @@ ion-icon{
 }
 
 @media (min-width: 976px){
+  .lg\:left-1\/2{
+    left: 50%;
+  }
+
   .lg\:col-span-1{
     grid-column: span 1 / span 1;
   }
@@ -1241,6 +1319,11 @@ ion-icon{
 
   .lg\:mb-0{
     margin-bottom: 0px;
+  }
+
+  .lg\:-translate-x-1\/2{
+    --tw-translate-x: -50%;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .lg\:grid-cols-12{
