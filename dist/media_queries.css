@@ -29,9 +29,12 @@
         /* background-color: #402E32; */
         border-radius: 9px;
         padding: 5px;
-        right: 2rem;
-        top: 1rem;
+        top: 0.5%;
+        right: 1%;
         z-index: 9999;
+        position: fixed;
+        font-weight: bolder;
+        font-size: 49px;
     }
     .sides{
         display: none;
