@@ -66,7 +66,7 @@ nav::before {
 }
 
 .hero {
-   background: url("../dist/img/background.jpg");
+   background: url("https://images.pexels.com/photos/4391977/pexels-photo-4391977.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
    width: 100%;
    background-position: center;
    background-size: cover;
