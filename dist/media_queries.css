@@ -36,6 +36,9 @@
         font-weight: bolder;
         font-size: 49px;
     }
+    main{
+        width: 96%;
+    }
     .sides{
         display: none;
     }
