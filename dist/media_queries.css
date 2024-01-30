@@ -23,18 +23,16 @@
     .menu{
         display: block;
         position: absolute;
-        width: 1.7rem;
+        width: 2rem;
         aspect-ratio: 1;
-        /* color: #fdfffd; */
-        /* background-color: #402E32; */
         border-radius: 9px;
-        padding: 5px;
-        top: 0.5%;
-        right: 1%;
+        right: 0;
+        top: 0;
         z-index: 9999;
-        position: fixed;
+        /* position: fixed; */
         font-weight: bolder;
         font-size: 49px;
+        color: black;
     }
     main{
         width: 98%;
