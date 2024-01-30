@@ -1100,6 +1100,11 @@ nav::before {
   padding-inline: 2rem;
 }
 
+main{
+  width: 80%;
+  margin: 0 auto;
+}
+
 .sides {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
